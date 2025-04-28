@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { APP_NAME } from "@/lib/constants";
-import  logo from "@/public/images/logo.svg";
+import logo from "@/public/images/logo.svg";
 import Menu from "@/components/shared/header/menu";
 
 export default function Header() {
