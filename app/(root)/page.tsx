@@ -1,5 +1,5 @@
-import sampleData from "@/db/sample-data";
 import ProductList from "@/components/shared/product/product-list";
+import { getLatestProducts} from "@/lib/actions/product.action";
 
 export const metadata = {
     title: "Home",
@@ -10,10 +10,11 @@ const delay = (ms: number) =>
     new Promise(resolve => setTimeout(resolve, ms));
 
 export default async function HomePage() {
+    const latestProducts = await getLatestProducts();
     await delay(1000);
     return (
         <div>
-            <ProductList data={sampleData.products} title="Newest Arrival" limit={4} />
+            <ProductList data={latestProducts} title="Newest Arrival" />
         </div>
     )
 }
