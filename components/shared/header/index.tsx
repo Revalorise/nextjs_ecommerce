@@ -2,7 +2,7 @@ import { ShoppingCart, UserIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { APP_NAME, APP_URL } from "@/lib/constants";
+import { APP_NAME } from "@/lib/constants";
 import  logo from "@/public/images/logo.svg";
 import ModeToggle from "@/components/shared/header/mode-toggle";
 

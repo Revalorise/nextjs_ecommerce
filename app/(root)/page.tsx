@@ -5,10 +5,14 @@ export const metadata = {
     description: "Home page description",
 }
 
-export default function HomePage() {
-  return (
-    <div>
-        <Button>A Button</Button>
-    </div>
-  )
+const delay = (ms: number) =>
+    new Promise(resolve => setTimeout(resolve, ms));
+
+export default async function HomePage() {
+    await delay(2000);
+    return (
+        <div>
+            <Button>A Button</Button>
+        </div>
+    )
 }
