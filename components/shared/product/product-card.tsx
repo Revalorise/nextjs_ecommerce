@@ -4,6 +4,10 @@ import Image from "next/image";
 import ProductPrice from "@/components/shared/product/product-price";
 import { Product } from "@/types";
 
+/**
+ * ProductCard component displays a single product with its image, name, brand, rating, and price.
+ * @param product - The product object containing product details
+ */
 export default function ProductCard({ product }: { product: Product }) {
     return (
         <Card className="w-full max-w-sm">

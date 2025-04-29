@@ -9,6 +9,9 @@ export const metadata = {
 const delay = (ms: number) =>
     new Promise(resolve => setTimeout(resolve, ms));
 
+/**
+ * The HomePage component fetches the latest products and displays using ProductList component.
+ */
 export default async function HomePage() {
     const latestProducts = await getLatestProducts();
     await delay(1000);
