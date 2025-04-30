@@ -4,6 +4,7 @@ import ProductPrice from "@/components/shared/product/product-price";
 import {Card, CardContent} from "@/components/ui/card";
 import {Badge} from "@/components/ui/badge";
 import {Button} from "@/components/ui/button";
+import ProductImages from "@/components/shared/product/product-images";
 
 export default async function ProductDetailsPage(
     props: { params: Promise<{ slug: string }> }
@@ -20,7 +21,7 @@ export default async function ProductDetailsPage(
             <div className="grid grid-cols-1 md:grid-cols-5">
                 {/* Images Column */}
                 <div className="col-span-2">
-
+                    <ProductImages images={product.images} />
                 </div>
                 {/* Details Column */}
                 <div className="col-span-2 p-5">
